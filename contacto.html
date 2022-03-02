@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/f9cd34b627.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Prata&family=Roboto&display=swap" rel="stylesheet">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Mis estilos CSS -->
+    <link rel="stylesheet" href="estilocontacto.css">
+    <!-- <script src="formulario.js"></script> -->
+    <title>Academia Miss Robichaux</title>
+    <script src="formulario.js"></script>
+    <link rel="icon" href="imagenes/logo.ico">
+  </head>
+  <body>
+    <div class="contenedor">
+      <header class="encabezado">
+          <div class="logo">
+            <a href="index.html"><img src="imagenes/LOGOACADEMIA.png" width="150px" alt=""></a>
+          </div>
+          <div class="menuhamburguesa">
+              <input type="checkbox" id="btn-menu">
+              <label for="btn-menu"><i class="fas fa-bars"></i></label>
+              <nav class="menu">
+                  <ul>
+                      <li><a href="laacademia.html"><i class="fas fa-school"></i>La Academia</a></li>
+                      <li><a href="aquelarre.html"><i class="fas fa-home"></i>Aquelarre</a></li>
+                      <li><a href="staff.html"><i class="fas fa-hat-wizard"></i>Staff</a></li>
+                      <li><a href="contacto.html"><i class="fas fa-hand-sparkles"></i>Contacto</a></li>
+                  </ul>             
+              </nav>
+          </div>
+      </header>
+      <main class="contenido-formulario">
+        <section class="section">
+          <div class="contacto">
+            <p>Tras llevar toda la historia escondidas, las brujas decidimos salir a la luz.</p>
+            <p>Convocamos públicamente a aquellas señoritas con habilidades excepcionales a buscar su sitio en la Academia Miss Robichaux.</p>
+            <p>Estamos en todas partes a todas horas... Sobre todo a la hora de las brujas!</p>
+            <p>La central de nuestro aquelarre se encuentra en New Orleans, Luisiana, EE.UU.</p>
+          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13830.602417676118!2d-90.0791111!3d29.9319594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x637f9be429eb77e0!2sBuckner%20Mansion!5e0!3m2!1ses!2sar!4v1634772626672!5m2!1ses!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <aside class="aside">
+          <div class="titulo-form">
+            <h2>Contactanos</h2>
+          </div>
+          <div class="formulario">
+            <form name="formval">
+              <div class="form-group">
+                <label for="nombre">Nombre *</label>
+                <input class="form-control" id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre..."/>
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido *</label>
+                <input class="form-control" id="apellido" type="text" name="apellido" placeholder="Ingresa tu apellido..."/>
+              </div>
+              <div class="form-group">
+                <label for="pais">País *</label>
+                <input class="form-control" id="pais" type="text" name="pais" placeholder="Ingresa tu país de residencia..."/>
+              </div>
+              <div class="form-group">
+                <label for="ciudad">Ciudad</label>
+                <input class="form-control" id="ciudad" type="text" name="ciudad" placeholder="Ingresa tu ciudad de residencia..."/>
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <input class="form-control" id="telefono" type="tel" name="telefono" placeholder="Ingresa tu número de teléfono..."/>
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input class="form-control"  id="email" type="email" name="email" placeholder="Ingresa tu correo electrónico"/>
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label><br>
+                <textarea class="textinput" placeholder="Escribe tu mensaje..."></textarea>
+              </div>
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <br>
+                    <input type="checkbox"> ¡Quiero recibir novedades!
+                  </label>
+                </div>
+              </div>
+              <br>
+              <button type="button" class="btn btn-primary" onclick="validar_envia()">Enviar</button>
+            </form>
+          </div>
+        </aside> 
+      </main>
+      <footer class="pie">
+          <div class="redsoc">
+              <a href="https://twitter.com/AHSFX" target="blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/ahsfx" target="blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://es.wikipedia.org/wiki/American_Horror_Story:_Coven" target="blank"><i class="fab fa-wikipedia-w"></i></a>
+          </div>
+      </footer>
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1170 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Prata', serif;
+font-family: 'Roboto', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #000;
+}
+
+body{
+    background-color: #000;
+    color: #E12242;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #E12242;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #000;
+}
+  
+/* Chrome, Edge, y Safari */
+*::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+  
+*::-webkit-scrollbar-track{
+    background: #000;
+}
+  
+*::-webkit-scrollbar-thumb{
+    background-color: #E12242;
+    border-radius: 20px;
+}
+
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/*Estilo encabezado*/
+.encabezado{
+    margin: 0;
+    padding: 20px;
+    background: #000;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    flex: 1 1 auto;
+    background: #000;
+    margin: 0 40px;
+}
+
+.menuhamburguesa{
+    background-color: #000;
+    flex: 5 1 auto;
+    align-self: flex-end;
+    align-items: baseline;
+}
+
+#btn-menu{
+    display: none;
+}
+
+.menuhamburguesa label{
+    color: #fff;
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+.menuhamburguesa label:hover{
+    cursor: pointer;
+    color: #E12242;
+}
+
+.menu ul{
+    margin: 0 15px 0 0;
+    list-style: none;
+    float: right;
+    padding: 0;
+    display: flex;
+}
+
+.menu li{
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 1px;
+}
+
+.menu li a{
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #E12242;
+}
+
+i{
+    padding: 5px;
+}
+
+
+/*Estilos footer*/
+#pie-index{
+    padding: 10px 34px 34px;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pie-index h1{
+    text-transform: lowercase;
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    color: #fff;
+}
+
+.frase img{
+    width: 40px;
+    margin-bottom: 10px;
+    animation: volando ease-in-out infinite 4s;
+    position: relative;
+}
+
+@keyframes volando{
+    0%   {opacity: 0.0; left:-200px; top:100px;}
+    50%  {opacity: 1.0; left:0px; top:0px;}
+    100% {opacity: 0.0; left:200px; top:100px;}
+}
+
+.frase{
+    width: 100%;
+    background-color: #000;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .pie{
+    padding: 34px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redsoc a{
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+
+.redsoc a:hover{
+    color: #E12242;
+}
+
+
+/*Estilos index.html*/
+.contenedor .contenido{
+    height: 455px;
+    background-image: url(imagenes/ahsposter2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content:flex-end;
+}
+
+
+/* Estilos laacademia.html */
+.contenido-laacademia{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-laacademia .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido-laacademia .intro img{
+    min-height: 300px;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+#texto-intro{
+    margin: 100px 50px 20px;
+    text-align: center;
+    max-width: 700px;
+    align-self: center;
+}
+
+#texto-intro p{
+    font-size: 30px;
+    font-family: 'Prata', serif;
+    color: #fff;
+    line-height: 55px;
+}
+
+.contenido-laacademia .disclaimer{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.disclaimer i{
+    align-self: center;
+    color: #fff;
+    animation: rotando 5s linear 1s;
+}
+
+@keyframes colorIcono{
+    from {color: #E12242;}
+    to {color: #ECD56A;}
+}
+  
+@keyframes rotando{
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+.disclaimer i:hover{
+    color: #E12242;
+    animation: colorIcono infinite 1s;
+}
+
+.disclaimer i:hover > .coven{
+    visibility: visible;
+    transform:scale(1.3);
+}
+
+.coven{
+    visibility: hidden;
+    max-width: 500px;
+    height: 40px;
+    transition: 1s;
+}
+
+#p-coven{
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #000;
+    font-size: 11px;
+    margin: 20px;
+}
+
+#p-coven a{
+    color: #E12242;
+}
+
+#p-coven a:hover{
+    color: #ECD56A;    
+}
+
+.instalaciones{
+    display: flex;
+    flex-direction: column;
+}
+
+.historia{
+    background-color:#000;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.historia .mansion{
+    margin: 88px 50px;
+}
+
+.mansion img{
+    width: 100%;
+}
+
+.historia .texto{
+    width: 100%;
+    margin-right: 50px;
+    padding: 60px 50px 50px 50px;
+    line-height: 35px;
+    font-size: 16px;
+    text-align: left;
+    background-color: #fff;
+    color: #000;
+    border-left: 4px double #E12242;
+}
+
+.historia h1{
+    color: #000;
+    align-self: flex-start;
+    font-family: 'Prata', serif;
+    font-size: 40px;
+    text-transform: none;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+ 
+.galeria{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.recorrido{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    flex: 1 1 auto;
+    width: auto;
+    width: 100%;
+}
+
+.recorrido .texto{
+    background-color: #fff;
+    color: #000;
+    padding: 50px 50px 50px 50px;
+    margin: 0 30px 50px 50px;
+    line-height: 35px;
+    font-size: 16px;
+    text-align: left;
+    border-left: 4px double #E12242;
+}
+
+.recorrido .video{
+    width: 100%;
+    padding: 65px 30px 0 50px;
+}
+
+.recorrido iframe{
+    width: 100%;
+}
+
+
+/*Estilos sidebar lacademia.html*/
+.contenedor-galeria{
+    margin: 0px 50px 20px 20px;
+    flex: 2 1 auto;
+    width: 100%;
+    height: 100%;
+    background: #E12242;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    padding: 20px;
+    grid-gap: 5px;
+}
+
+.img-galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-galeria:nth-child(1){
+    grid-column-start: span 2;
+}
+
+.item-galeria:nth-child(7){
+    grid-column-start: span 2;
+}
+
+.item-galeria:nth-child(11){
+    grid-column-start: span 2;
+}
+
+.modal{
+    display: none;
+}
+
+.modal:target {
+    display: block;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    margin: 15px, 0;
+}
+
+.imagen{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a{
+    color: #E12242;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen a:nth-child(2){
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img{
+    width: 800px;
+    max-width: 100%;
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+.cerrar{
+    display: block;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.cerrar:hover{
+    color: #E12242;
+}
+
+
+/*Estilos aquelarre.html*/
+.contenido-aquelarre{
+    background-color: #000;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-aquelarre h1{
+    color: #000;
+    align-self: flex-start;
+    font-family: 'Prata', serif;
+    font-size: 40px;
+    text-transform: none;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.contenido-aquelarre p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.introaquelarre{
+    background: #000;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.introaquelarre img{
+    background: coral;
+    object-fit: contain;
+    width: 100%;
+}
+
+.introaquelarre #texto-intro{
+    max-width: 600px;
+    border-top: double 4px #E12242;
+    border-bottom: double 4px #E12242;
+    margin-bottom: 70px;
+} 
+
+.introaquelarre #texto-intro p{
+    font-size: 20px;
+}
+
+.etapas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.suprema .texto{
+    background: #fff;
+    border-left: 4px double #E12242;
+    margin: 100px 50px 0 50px;
+    padding-right: 50px;
+}
+
+.etapas .texto p{
+    color: #000;
+}
+
+.suprema,
+.pruebas{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+.supremacia{
+    margin: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.supremacia img{
+    width: auto;
+}
+
+.texto .caracteristicas{
+    margin: 100px 50px;
+    text-align: left;    
+    line-height: 35px;
+}
+
+.suprema .texto .article{
+    background-color: #E12242;
+    display: flex;
+    justify-content: flex-end;
+    float: left;
+    margin: 0  0 50px 50px;
+    max-width: 450px;
+    min-height: 130px;
+    border-top: 6px groove #E12242;
+    border-left: 9px groove #E12242;
+}
+
+.suprema .texto .article img{
+    width: 100px;
+    object-fit: contain;
+    background-color: black;
+}
+
+.suprema .texto .article h2{
+    background-color: #fff;
+    padding: 10px;
+    color: #000;
+    font-family: 'Prata', serif;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.suprema .texto .article p{
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+h2 a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #E12242;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+h2 a:hover{
+    color: blue;
+}
+
+.supremacia p{
+    font-size: 10px;
+    font-style: italic;
+}
+
+.pruebas .sucesion{
+    margin: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pruebas .texto{
+    background: #fff;
+    border-left: 4px double #E12242;
+    margin: 0px 50px;
+    padding: 100px 100px 50px 50px;
+    line-height: 35px;
+}
+
+.siete-maravillas{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    border-top: double 4px #E12242;
+}
+
+.galeria2{
+    background-color: #000;
+    margin: 0px;
+    color: #ECD56A;
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.descrip {
+    background-color: #000;
+    min-width: 200px;
+    height: 300px;
+    margin: 30px;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    border: solid 4px #E12242;
+}
+
+.descrip p{
+    color: #fff;
+}
+
+.card{
+    margin: 30px;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px;
+}
+
+.cuerpo-card h5,
+.cuerpo-card p{
+    margin: 0;
+}
+
+.card img{
+    width: 200px;
+    object-fit: cover;
+    height: 300px;
+}
+
+.cuerpo-card{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover > .cuerpo-card{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover > .cuerpo-card h5{
+    margin-bottom: 5px;
+}
+
+.card:hover > img{
+    transform: scale(1.1);
+}
+
+.card .cuerpo-card h5{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+}
+
+.card .cuerpo-card p{
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin-top: 20px;
+}
+
+.card .cuerpo-card h5{
+    text-transform: uppercase;
+}
+
+
+/* Estilos de staff.html */
+.contenido-staff{
+    display: flex;
+    flex-direction: column;
+}
+
+.introstaff{
+    width: 100%;
+    padding: 50px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 4px double #E12242;
+    border-bottom: 4px double #E12242;
+}
+
+.introstaff .texto{
+    background: #fff;
+    padding-right: 50px;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgstaff{
+    width: 100%;
+}
+
+.imgstaff img{
+    width: 100%;
+}
+
+.introstaff h1{
+    color: #000;
+    align-self: flex-start;
+    font-family: 'Prata', serif;
+    font-size: 40px;
+    text-transform: none;
+    font-weight: lighter;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.introstaff p{
+    color: #000;
+    font-size: 16px;
+}
+
+.contenedor-cuadros{
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contenedor-cuadros a{
+    text-decoration: none;
+}
+
+.contenedor-cuadros a{
+    color: #ECD56A;
+}
+.contenedor-cuadros a:hover{
+    color: #E12242;
+}
+
+.item-cuadros{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.item-cuadros figure{
+    margin: 20px;
+    position: relative;
+    height: 300px;
+    width: auto;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px;
+}
+
+.item-cuadros figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 500ms ease-out;
+}
+
+.item-cuadros figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(148, 72, 104, 0.6);
+    color: #fff;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.item-cuadros figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.item-cuadros figure:hover > .capa a{
+    text-decoration: none;
+    padding: 0;
+    
+}
+
+.item-cuadros figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.item-cuadros figure:hover > img{
+    transform: scale(1.3);
+}
+
+.item-cuadros figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+.item-cuadros figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.bio{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.segmento-bio{
+    margin: 50px;
+}
+
+.segmento-bio img{
+    object-fit: cover;
+    width: auto;
+    max-width: 300px;
+    margin: 40px;
+}
+
+.biografia{
+    border-left: groove 4px #E12242;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.biografia a{
+    margin: 0 50px;
+}
+
+#resumen{
+    color: #000;
+    padding: 20px 50px;
+    line-height: 35px;
+}
+
+.segmento-bio{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+@media screen and (max-width: 640px){
+
+    /*laacademia.html*/
+    .historia{
+        flex-direction: column;
+    }
+
+    .galeria{
+        flex-direction: column;
+    }
+    
+    #texto-intro p{
+        text-align: center;
+        font-size: 16px;
+        padding: 30px;
+    }
+
+    .contenido-laacademia .texto{
+        padding: 40px;
+        text-align: left;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .historia h1{
+        margin-bottom: 10px;
+    }
+
+
+    /*aquelarre.html*/
+    .etapas .texto{
+        margin: 0;
+        padding: 0;
+    }
+
+    .suprema .texto{
+        width: 100%;
+    }
+
+    .suprema .texto .article{
+        margin: 50px 0;
+        width: 100%;
+    }
+
+    .pruebas .texto{
+        padding: 100px 50px;
+        width: 100%;
+    }
+
+    .pruebas .sucesion img{
+        width: 100%;
+    }
+
+
+    /*staff.html*/  
+    .contenedor-cuadros{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .introstaff{
+        padding: 50px 0;
+    }
+
+    .introstaff .texto{
+        margin: 0 50px;
+        padding-right: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 950px){
+    .contenedor .encabezado{
+        flex-flow: column nowrap;
+        padding: 20px 20px 0 20px;
+    }
+
+    .menuhamburguesa{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .menuhamburguesa label{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background: #000;
+        width: 70%;
+        margin-left: -100%;
+        transition: all 0.1s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        float: none;
+    }
+
+    .menu li{
+        border-top: 1px solid rgba(182, 209, 64, 0.486);
+        padding: 15px 20px;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+
+    /* Contenedor de staff.html */
+    .contenedor-cuadros{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*laacademia.html */
+    #texto-intro{
+        margin: 20px;
+    }
+
+    #texto-intro p{
+        text-align: center;
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    .historia{
+        flex-direction: column;
+    
+    }
+
+    .historia .mansion{
+        margin: 0px;
+        padding: 40px;
+    }
+
+    .historia .texto{
+        margin: 0;
+        padding: 40px;
+    }
+
+    .galeria{
+        flex-direction: column;
+    }
+    
+    .recorrido{
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .recorrido .texto{
+        padding: 40px;
+        margin: 0;
+    }
+
+    .recorrido .video{
+        padding: 0 40px;
+    }
+
+    .instalaciones .contenedor-galeria{
+        margin: 20px;
+        width: auto;
+    }
+
+
+    /*aquelarre.html*/
+    .suprema,
+    .pruebas{
+        flex-direction: column-reverse;
+    }
+
+    .siete-maravillas{
+        margin: 50px 0;
+    }
+
+
+    /*staff.html*/
+    .introstaff{
+        flex-direction: column;
+    }
+
+    .imgstaff{
+        margin-top: 50px;
+    }
+
+    .imgstaff img{
+        min-width: none;
+    }
+
+    .bio{
+        margin-bottom: 50px;
+    }
+    
+    .contenido-staff{
+        background-color: #fff;
+    }
+
+    .segmento-bio{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+        margin: 50px 0 0;
+    }
+
+    .segmento-bio img{
+        border-left: groove 4px #E12242;
+        margin: 0 40px;
+        padding-left: 50px;
+    }
+
+    .biografia{
+        margin-bottom: 0;
+        padding-bottom: 50px;
+    }
+
+}
+
+
+@media screen and (min-width: 950px){
+
+    /*laacademia.html*/
+    .mansion img{
+        width: 554px;
+        min-height: 465px;
+    }
+
+    .recorrido .texto{
+        border-right: 4px double #E12242;
+        border-left: none;
+    }
+    
+
+    /*aquelarre.html*/
+    .pruebas .sucesion img{
+        max-width: 400px;
+    }
+
+
+    /*staff.html*/
+    .introstaff{
+        align-items: center;
+    }
+
+    .imgstaff img{
+        width: 100%;
+        min-width: 600px;
+    }
+}
+
